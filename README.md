@@ -16,6 +16,7 @@
 `git status`
 ### Mudar o commit no qual uma branch vai apontar
 `git checkout <nome-da-branch-que-irá-caminhar>`
+
 `git merge <nome-da-branch-que-aponta-para-o-commit-que-desejo-que-a-branch-atual-passe-a-apontar>`
 ### Mostrar detalhes do último commit ou de um commit específico
 `git show`
@@ -36,6 +37,7 @@
 `git reset --soft HEAD~1`
 ### Visualizar o projeto em uma branch ou commit específico
 `git checkout <nome-da-branch>`
+
 `git checkout <hash-do-commit>`
 ### Visualizar histórico de commits
 `git log  [--graph]  [--oneline]  [--all]  [--decorate]  [--pretty]`
