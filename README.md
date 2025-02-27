@@ -46,3 +46,4 @@
 * Branches são meramente ponteiros que apontam para um commit específico.
 * Um repositório pode ter várias branches, cada uma apontando para um commit.
 * Ao fazer checkout entre branches ou entre commits, o que está se movendo é o ponteiro HEAD.
+* É possível que o ponteiro HEAD esteja apontando para um commit em vez de para uma branch. Neste caso, diz-se que o repositório está em um estado de HEAD destacado (detached HEAD).
