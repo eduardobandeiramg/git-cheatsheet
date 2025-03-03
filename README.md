@@ -1,13 +1,11 @@
 # Comandos Git
 
+## Trabalhando com repositório local
+
 ### Iniciar repositório local
 `git init`
 ### Configurar repositório local
 `git config [--local]  [--global]  [--system]`
-### Clonar repositório remoto
-`git clone`
-### Linkar repositório local a um repositório remoto
-`git remote add origin <nome da branch remota>`
 ### Adicionar arquivos à área de staging
 `git add <arquivo>`
 ### Fazer commit
@@ -18,20 +16,10 @@
 `git branch <nome-da-branch>`
 ### Listar branches
 `git branch`
-### Listar branches remotas
-`git branch -r`
 ### Deletar branch
 `git branch -d <branch-1>`
 ### Mudar de branch
 `git checkout <nome-da-branch-que-irá-caminhar>`
-### Recuperar arquivos deletados (passo 1)
-`git checkout <commit-antes da deleção>` </br>
-pegar o arquivo </br>
-`git checkout <branch-mais atual>` </br>
-soltar o arquivo na área de trabalho`
-### Recuperar arquivos deletados (passo 2)
-`git checkout <commit-antes-da-delecao> -- <nome-do-arquivo>` </br>
-(O git "volta" para o commit anterior, mas especificamente apenas para o arquivo mencionado, trazendo ele para o commit atual)
 ### Juntar a branch 'feature' à branch 'main'
 `git checkout main` </br>
 `git merge <feature> -m "mensagem de merge"` </br>
@@ -44,13 +32,17 @@ soltar o arquivo na área de trabalho`
 `git checkout main` </br>
 `git merge <feature>` </br>
 mensagem > control o > enter > control x
+### Recuperar arquivos deletados (passo 1)
+`git checkout <commit-antes da deleção>` </br>
+pegar o arquivo </br>
+`git checkout <branch-mais atual>` </br>
+soltar o arquivo na área de trabalho`
+### Recuperar arquivos deletados (passo 2)
+`git checkout <commit-antes-da-delecao> -- <nome-do-arquivo>` </br>
+(O git "volta" para o commit anterior, mas especificamente apenas para o arquivo mencionado, trazendo ele para o commit atual)
 ### Mostrar detalhes do último commit ou de um commit específico
 `git show` </br>
 `git show *hash de um commit qualquer*`
-### Enviar mudanças para o repositório remoto
-`git push`
-### Trazer modificações do repositório remoto
-`git pull`
 ### Restaurar arquivos para último commit
 `git restore <arquivo>`
 ### Remover arquivos da área de staging
@@ -62,6 +54,26 @@ mensagem > control o > enter > control x
 `git checkout <hash-do-commit>`
 ### Visualizar histórico de commits
 `git log  [--graph]  [--oneline]  [--all]  [--decorate]  [--pretty]` </br>
+
+## Trabalhando com repositório remoto
+
+### Clonar repositório remoto
+`git clone`
+### Linkar repositório local a um repositório remoto
+`git remote add origin <nome da branch remota>`
+### Enviar mudanças para o repositório remoto
+`git push`
+### Trazer modificações do repositório remoto
+`git pull`
+### Listar branches remotas
+`git branch -r`
+### Criar branch local que rastreia branch remota
+`git branch <nome-branch-loca> <nome-branch-remota>`
+### Criar branch local que rastreia branch remota e fazer checkout para ela diretamente
+`git checkout -b <nome-branch-local> <nome-branch-remota>`
+### Visualizar a lista de branches locais e as respectivas branches remotas
+`git branch -vv`
+
 # Observações
 * Branches são meramente ponteiros que apontam para um commit específico.
 * Um repositório pode ter várias branches, cada uma apontando para um commit.
