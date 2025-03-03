@@ -32,6 +32,14 @@
 `git checkout main` </br>
 `git merge <feature>` </br>
 mensagem > control o > enter > control x
+### Comparar arquivos entre branch atual e outra branch
+`git diff <branch-1>` </br>
+Irá aparecer em vermelho as linhas que estão na <branch-1> mas não na atual; e em verde as linhas que não estão na <branch-1> e que estão na atual.
+### Comparar arquivos entre duas branches
+`git diff <branch-1> <branch-2>` </br>
+Irá mostrar de vermelho o que está na <branch-1> e não está na <branch-2> </br>
+Irá mostrar de verde o que está na <branch-2> e que não está na <branch-1>
+###
 ### Recuperar arquivos deletados (passo 1)
 `git checkout <commit-antes da deleção>` </br>
 pegar o arquivo </br>
