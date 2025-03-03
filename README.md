@@ -47,8 +47,6 @@
 * Um repositório pode ter várias branches, cada uma apontando para um commit.
 * Ao fazer checkout entre branches ou entre commits, o que está se movendo é o ponteiro HEAD.
 * É possível que o ponteiro HEAD esteja apontando para um commit em vez de para uma branch. Neste caso, diz-se que o repositório está em um estado de HEAD destacado (detached HEAD).
-</br>
 * Quando se faz um `git merge <branch-1>`, o git procura o commit comum passado entre a branch atual e a branch "branch-1". Então, pega as alterações feitas na branch-1 que não conflitam com o commit atual da branch atual e passa essas mudanças para um novo commit. Commit este que a branch atual irá apontar.
-</br>
 * Quando uma nova branch é criada, (QUAIS COMMITS ELA INCORPORA NO SEU HISTÓRICO ? (GIT LOG))
 * RESPONDER ^^^^^
