@@ -18,18 +18,25 @@
 `git checkout <nome-da-branch-que-irá-caminhar>`
 ### Juntar a branch <feature> à branch <main>
 `git checkout main`
+
 `git merge <feature>` -m "mensagem de merge"
+
 `git merge <nome-da-branch-que-aponta-para-o-commit-que-desejo-que-a-branch-atual-passe-a-apontar>`
 ### Merge abrindo o editor
 `git checkout main`
+
 `git merge <feature>`
+
 "i" > mensagem > esq > :wq > enter
 ### Merge abrindo o nano
 `git checkout main`
+
 `git merge <feature>`
+
 mensagem > control o > enter > control x
 ### Mostrar detalhes do último commit ou de um commit específico
 `git show`
+
 `git show *hash de um commit qualquer*`
 ### Enviar mudanças para o repositório remoto
 `git push`
