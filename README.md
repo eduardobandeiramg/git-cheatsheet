@@ -65,5 +65,6 @@ mensagem > control o > enter > control x
 * Ao fazer checkout entre branches ou entre commits, o que está se movendo é o ponteiro HEAD.
 * É possível que o ponteiro HEAD esteja apontando para um commit em vez de para uma branch. Neste caso, diz-se que o repositório está em um estado de HEAD destacado (detached HEAD).
 * Quando se faz um `git merge <branch-1>`, o git procura o commit comum passado entre a branch atual e a branch "branch-1". Então, pega as alterações feitas na branch-1 que não conflitam com o commit atual da branch atual e passa essas mudanças para um novo commit. Commit este que a branch atual irá apontar.
+* Existe um tipo de merge chamado "fast-forward". Ele acontece quando se faz um merge da <branch-1> na main; e a main não teve novos commits em relação ao ancestral comum das duas branches (quando elas já foram iguais). Ou seja, ocorreram mudanças apenas na branch <branch-1>, mas não na main. Neste caso, não faz sentido criar um commit de merge exatamente igual ao último commit da branch <branch-1>. Então, acontece um mero apontamento da branch <main> para o último commit da branch <branch-1>.
 * Quando uma nova branch é criada, (QUAIS COMMITS ELA INCORPORA NO SEU HISTÓRICO ? (GIT LOG))
 * RESPONDER ^^^^^
