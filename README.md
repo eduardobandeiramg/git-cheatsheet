@@ -32,7 +32,7 @@ soltar o arquivo na área de trabalho`
 ### Recuperar arquivos deletados (passo 2)
 `git checkout <commit-antes-da-delecao> -- <nome-do-arquivo>` </br>
 (O git "volta" para o commit anterior, mas especificamente apenas para o arquivo mencionado, trazendo ele para o commit atual)
-### Juntar a branch <feature> à branch <main>
+### Juntar a branch 'feature' à branch 'main'
 `git checkout main` </br>
 `git merge <feature> -m "mensagem de merge"` </br>
 `git merge <nome-da-branch-que-aponta-para-o-commit-que-desejo-que-a-branch-atual-passe-a-apontar>`
