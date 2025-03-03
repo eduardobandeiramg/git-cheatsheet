@@ -19,7 +19,7 @@
 ### Juntar a branch <feature> à branch <main>
 `git checkout main`
 
-`git merge <feature>` -m "mensagem de merge"
+`git merge <feature> -m "mensagem de merge"`
 
 `git merge <nome-da-branch-que-aponta-para-o-commit-que-desejo-que-a-branch-atual-passe-a-apontar>`
 ### Merge abrindo o editor
