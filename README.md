@@ -14,6 +14,14 @@
 `git commit -m "mensagem"`
 ### Verificar status da área de trabalho (arquivos já commitados, arquivos modificados ou staged)
 `git status`
+### Criar branch
+`git branch <nome-da-branch>`
+### Listar branches
+`git branch`
+### Listar branches remotas
+`git branch -r`
+### Deletar branch
+`git branch -d <branch-1>`
 ### Mudar de branch
 `git checkout <nome-da-branch-que-irá-caminhar>`
 ### Recuperar arquivos deletados (passo 1)
@@ -43,12 +51,6 @@ mensagem > control o > enter > control x
 `git push`
 ### Trazer modificações do repositório remoto
 `git pull`
-### Criar branch
-`git branch <nome-da-branch>`
-### Listar branches
-`git branch`
-### Deletar branch
-`git branch -d <branch-1>`
 ### Restaurar arquivos para último commit
 `git restore <arquivo>`
 ### Remover arquivos da área de staging
