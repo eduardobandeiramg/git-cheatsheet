@@ -6,12 +6,18 @@
 `git init`
 ### Configurar repositório local
 `git config [--local]  [--global]  [--system]`
-### Adicionar arquivos à área de staging
-`git add <arquivo>`
-### Fazer commit
-`git commit -m "mensagem"`
 ### Verificar status da área de trabalho (arquivos já commitados, arquivos modificados ou staged)
 `git status`
+### Adicionar arquivos à área de staging
+`git add <arquivo>`
+### Adicionar todos os arquivos à área de staging
+`git add .`
+### Remover arquivos da área de staging
+`git rm --cached <nome-do-arquivo>`
+### Remover pasta da área de staging
+`git rm -r --cached <nome-da-pasta/>`
+### Fazer commit
+`git commit -m "mensagem"`
 ### Criar branch
 `git branch <nome-da-branch>`
 ### Listar branches
