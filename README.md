@@ -86,9 +86,11 @@ soltar o arquivo na área de trabalho`
 ### Linkar branch local com uma branch remota específica (versão enxuta)
 `git branch -u origin/<branch-remota> <branch-local>`
 ### Enviar mudanças para o repositório remoto
-`git push <apelido-repositorio-remoto(padrao=origin)> <branch-repositorio-remoto>`
+`git push <apelido-repositorio-remoto(padrao=origin)> <branch-repositorio-remoto>`</br>
+(criará a branch remota caso ela não exista)
 ### Enviar mudanças para o repositório remoto e linkar branch atual com a branch remota ao mesmo tempo
-`git push -u <apelido-repositorio-remoto(padrao=origin)> <nome-branch-remota>`
+`git push -u <apelido-repositorio-remoto(padrao=origin)> <nome-branch-remota>` </br>
+(criará a branch remota caso ela não exista)
 ### Enviar mudanças para o repositório remoto (caso o remoto padrão tenha sido definido)
 `git push`
 ### Trazer modificações do repositório remoto
