@@ -76,7 +76,11 @@ soltar o arquivo na área de trabalho`
 ### Clonar repositório remoto
 `git clone`
 ### Linkar repositório local a um repositório remoto
-`git remote add origin <nome da branch remota>`
+`git remote add <origin> <nome da branch remota>`
+### Remover o link do repositório local com um repositório remoto
+`git remote remove <origin>`
+### Listar os repositórios remotos configurados
+`git remote -v`
 ### Linkar branch local com uma branch remota específica
 `git branch --set-upstream-to=origin/<branch-remota> <branch-local>`
 ### Linkar branch local com uma branch remota específica (versão enxuta)
