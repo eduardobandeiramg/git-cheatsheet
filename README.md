@@ -26,6 +26,8 @@
 `git branch -d <branch-1>`
 ### Mudar de branch
 `git checkout <nome-da-branch-que-irá-caminhar>`
+### Renomear branch atual
+`git branch -m <novo-nome>` (`-M` para forçar)
 ### Juntar a branch 'feature' à branch 'main'
 `git checkout main` </br>
 `git merge <feature> -m "mensagem de merge"` </br>
