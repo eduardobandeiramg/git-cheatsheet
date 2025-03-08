@@ -1,6 +1,7 @@
 # Comandos Git
 
 # Trabalhando com repositório local
+git restore, git reset, git rebase
 
 ### Iniciar repositório local
 `git init`
