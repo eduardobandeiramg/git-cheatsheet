@@ -1,6 +1,6 @@
 # Comandos Git
 
-## Trabalhando com repositório local
+# Trabalhando com repositório local
 
 ### Iniciar repositório local
 `git init`
@@ -69,12 +69,18 @@ soltar o arquivo na área de trabalho`
 ### Visualizar histórico de commits
 `git log  [--graph]  [--oneline]  [--all]  [--decorate]  [--pretty]` </br>
 
-## Trabalhando com repositório remoto
+# Trabalhando com repositório remoto
 
 ### Clonar repositório remoto
 `git clone`
 ### Linkar repositório local a um repositório remoto
 `git remote add origin <nome da branch remota>`
+### Linkar branch local com uma branch remota específica
+`git branch --set-upstream-to=origin/<branch-remota> <branch-local>`
+### Linkar branch local com uma branch remota específica (versão enxuta)
+`git branch -u origin/<branch-remota> <branch-local>`
+### Enviar mudanças para o repositório remoto e linkar branch atual com a branch remota ao mesmo tempo
+`git push -u origin <nome-branch-remota>`
 ### Enviar mudanças para o repositório remoto
 `git push`
 ### Trazer modificações do repositório remoto
