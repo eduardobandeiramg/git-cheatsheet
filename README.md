@@ -73,6 +73,8 @@ soltar o arquivo na área de trabalho`
 `git log  [--graph]  [--oneline]  [--all]  [--decorate]  [--pretty]` </br>
 ### Visualizar histórico de commits completo:
 `git --no-pager log`
+### Visualizar histórico de commits de uma pasta específica:
+`git log <caminho-da-pasta>`
 
 # Trabalhando com repositório remoto
 
