@@ -71,6 +71,8 @@ soltar o arquivo na área de trabalho`
 `git checkout <hash-do-commit>`
 ### Visualizar histórico de commits
 `git log  [--graph]  [--oneline]  [--all]  [--decorate]  [--pretty]` </br>
+### Visualizar histórico de commits completo:
+`git --no-pager log`
 
 # Trabalhando com repositório remoto
 
